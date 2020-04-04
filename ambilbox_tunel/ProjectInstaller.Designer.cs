@@ -33,13 +33,16 @@
             // 
             // serviceProcessInstaller1
             // 
+            this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
             this.serviceProcessInstaller1.Password = null;
             this.serviceProcessInstaller1.Username = null;
+
             // 
             // serviceInstaller1
             // 
-            //this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
-            //this.serviceInstaller1.DelayedAutoStart = true;
+            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
+            this.serviceInstaller1.Description = "It tuneling adalight data to udp";
+            this.serviceInstaller1.DisplayName = "adalight_tunel_service";
             this.serviceInstaller1.ServiceName = "adalight_tunel_service";
             // 
             // ProjectInstaller
