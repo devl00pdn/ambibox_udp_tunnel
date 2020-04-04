@@ -17,7 +17,7 @@ namespace ambilbox_tunel
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new Adalight_tunel_service()
             };
             ServiceBase.Run(ServicesToRun);
         }

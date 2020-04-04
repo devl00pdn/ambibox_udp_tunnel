@@ -10,19 +10,22 @@ using System.Threading.Tasks;
 
 namespace ambilbox_tunel
 {
-    public partial class Service1 : ServiceBase
+    public partial class Adalight_tunel_service : ServiceBase
     {
-        public Service1()
+        private ambibox_tunel_dev.Adalight_tunel adatunel = new ambibox_tunel_dev.Adalight_tunel();
+        public Adalight_tunel_service()
         {
             InitializeComponent();
         }
 
         protected override void OnStart(string[] args)
         {
+            adatunel.start();
         }
 
         protected override void OnStop()
         {
+            adatunel.stop();
         }
     }
 }
