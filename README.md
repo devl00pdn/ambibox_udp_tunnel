@@ -35,8 +35,13 @@ In progress ...
 
 Setup process:
 1) Install and config com2com
-2) AmbiBox 
+2) Install and config Ambibox
+3) Install Ambibox udp tunnel
 
+1) Install com2com - virtual com ports emlator. https://sourceforge.net/projects/com0com/  
+* Run com2com (naming "Setup" in win programs menu)
+* Rename Virtal com port pair to COM4 and COM5 (one of there have to naming COM5 for Ambibox udp tunnel correct execution). If ports have no exist, create them.
+* turn on checkbox "enable buffer overrun" for each interface.
 
 3) Install Ambibox udp tunnel service
   
