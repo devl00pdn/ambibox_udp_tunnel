@@ -31,6 +31,22 @@ Ambibox grabs colors from monitor borders and sends to com port.
 Ambibox udp tunnel service receives serial date, converts to custom packet and sends via udp to port 40000 (broadcast).
 
 ## How to use
+In progress ..  
 
-In progress...
- 
+
+
+3) Install Ambibox udp tunnel service
+  
+You can get setup file from my google drive: https://drive.google.com/open?id=17uQnofNItnX8sGNvRvJ5_0ZyUmSuBFaz  
+  or  build setup from sources:
+  
+  * Clone this repo  
+  * Open project in Visual studio ( checked on VS2019) 
+  * In solution explorer right click and build on ambibox_tunel, then ambibox_tunel_setup
+  * In solution explorer right click ambibox_tunel_setup and select "Open directory ..", there are installation file "ambibox_tunel_setup .msi"    
+  
+Check that service has been successfully installed.
+* Run service manager. Windows key+R, services.msc, enter.
+* You should check if there is adalight_tunel_service in the list.
+
+Service will start automatically after reboot or you can run it manual.
