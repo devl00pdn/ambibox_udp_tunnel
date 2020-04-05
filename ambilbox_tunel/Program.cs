@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ambilbox_tunel
+namespace ambilbox_tunnel
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace ambilbox_tunel
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Adalight_tunel_service()
+                new Adalight_tunnel_service()
             };
             ServiceBase.Run(ServicesToRun);
         }

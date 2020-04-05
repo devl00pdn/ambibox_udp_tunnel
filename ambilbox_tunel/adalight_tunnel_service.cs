@@ -8,12 +8,12 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ambilbox_tunel
+namespace ambilbox_tunnel
 {
-    public partial class Adalight_tunel_service : ServiceBase
+    public partial class Adalight_tunnel_service : ServiceBase
     {
-        private ambibox_tunel_dev.Adalight_tunel adatunel = new ambibox_tunel_dev.Adalight_tunel();
-        public Adalight_tunel_service()
+        private ambibox_tunnel_dev.Adalight_tunnel adatunel = new ambibox_tunnel_dev.Adalight_tunnel();
+        public Adalight_tunnel_service()
         {
             InitializeComponent();
         }

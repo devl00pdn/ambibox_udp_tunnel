@@ -21,25 +21,25 @@ using System.Timers;
 using System.IO.Ports;
 using System.Net.Sockets;
 
-namespace ambibox_tunel_dev
+namespace ambibox_tunnel_dev
 {
-    class Adalight_tunel
+    class Adalight_tunnel
     {
         private SerialPort serial;
         private bool is_started = false;
-        private bool is_data_incomming = false;
+        private bool does_data_incomming = false;
         private UdpClient client = new UdpClient();
         private const int PORT_NUMBER = 40000;
         private IPEndPoint ip = new IPEndPoint(IPAddress.Parse("255.255.255.255"), PORT_NUMBER);
         private Adalight_parser parser = new Adalight_parser();
         private static System.Timers.Timer wdt_timer;
         
-        public Adalight_tunel()
+        public Adalight_tunnel()
         {
 
         }
 
-        ~Adalight_tunel()
+        ~Adalight_tunnel()
         {
             if (serial.IsOpen)
             {
@@ -95,7 +95,7 @@ namespace ambibox_tunel_dev
             parsin_result = parser.parsing_msg(msg, ref led_strip_data);
             if (parsin_result)
             {
-                is_data_incomming = true;
+                does_data_incomming = true;
                 byte[] udp_package = Adalight_parser.serialize(led_strip_data);
                 client.Send(udp_package, udp_package.Length, ip);
 
@@ -125,12 +125,12 @@ namespace ambibox_tunel_dev
             {
                 return;
             }
-            if (!is_data_incomming)
+            if (!does_data_incomming)
             {
                 // if incoming data is stuck. Send signal to adalight 
                 serial.Write("Ada\n");
             }
-            is_data_incomming = false;
+            does_data_incomming = false;
         }
 
     }

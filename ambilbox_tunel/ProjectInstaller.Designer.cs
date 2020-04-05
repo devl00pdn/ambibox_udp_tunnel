@@ -1,4 +1,4 @@
-﻿namespace ambilbox_tunel
+﻿namespace ambilbox_tunnel
 {
     partial class ProjectInstaller
     {

@@ -1,6 +1,6 @@
-﻿namespace ambilbox_tunel
+﻿namespace ambilbox_tunnel
 {
-    partial class Adalight_tunel_service
+    partial class Adalight_tunnel_service
     {
         /// <summary> 
         /// Обязательная переменная конструктора.

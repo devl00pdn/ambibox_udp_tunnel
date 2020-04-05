@@ -76,12 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adalight_parser.cs" />
-    <Compile Include="ambibox_tunel.cs" />
-    <Compile Include="adalight_tunel_service.cs">
+    <Compile Include="ambibox_tunnel.cs" />
+    <Compile Include="adalight_tunnel_service.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="adalight_tunel_service.Designer.cs">
-      <DependentUpon>adalight_tunel_service.cs</DependentUpon>
+    <Compile Include="adalight_tunnel_service.Designer.cs">
+      <DependentUpon>adalight_tunnel_service.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectInstaller.cs">
@@ -93,7 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ambilbox_tunel_TemporaryKey.pfx" />
+    <None Include="ambilbox_tunnel_TemporaryKey.pfx" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
