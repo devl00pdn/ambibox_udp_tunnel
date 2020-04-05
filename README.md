@@ -14,7 +14,23 @@ This repo contains the solution for translating serial data form Ambibox (only A
   }
 ```
 
-This code writed after two day C# experiance, so I hope the user will be tolerant about code quality. Thx to guides and stackoverflow :)  
+This code has written after two days of C# experiance, so I hope the user will be tolerant about code quality. Thx to guides and stackoverflow :)  
 
-## Solution description: in progress ...
+## Solution description
+
+Applications have been using in the solution:
+
+1. AmbiBox - backlight data source. http://www.ambibox.ru/en/index.php/Main_Page
+2. com2com - virtual com ports emlator. https://sourceforge.net/projects/com0com/
+3. Ambibox udp tunnel - project of this repository.
+
+com2com application creates two virtual comm ports and bridge between them.
+After installation Ambibox udp tunnel starts the service.
+Ambibox and Ambibox udp tunnel connect to virtual comms.
+Ambibox grabs colors from monitor borders and sends to com port.
+Ambibox udp tunnel service receives serial date, converts to custom packet and sends via udp to port 40000 (broadcast).
+
+## How to use
+
+In progress...
  
