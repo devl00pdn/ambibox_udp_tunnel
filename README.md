@@ -31,8 +31,11 @@ Ambibox grabs colors from monitor borders and sends to com port.
 Ambibox udp tunnel service receives serial date, converts to custom packet and sends via udp to port 40000 (broadcast).
 
 ## How to use
-In progress ..  
+In progress ... 
 
+Setup process:
+1) Install and config com2com
+2) AmbiBox 
 
 
 3) Install Ambibox udp tunnel service
