@@ -3,12 +3,10 @@
     partial class ProjectInstaller
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// Освободить все используемые ресурсы.
         /// </summary>
         /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
@@ -22,10 +20,6 @@
 
         #region Код, автоматически созданный конструктором компонентов
 
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
             this.serviceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller();
@@ -41,7 +35,7 @@
             // serviceInstaller1
             // 
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
-            this.serviceInstaller1.Description = "It tuneling adalight data to udp";
+            this.serviceInstaller1.Description = "Service parses adalight data from com port 5, transforms to custom packet then sends udp broadcast to port 40000";
             this.serviceInstaller1.DisplayName = "adalight_tunel_service";
             this.serviceInstaller1.ServiceName = "adalight_tunel_service";
             // 
