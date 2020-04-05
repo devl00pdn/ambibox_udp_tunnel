@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ambilbox_tunel", "ambilbox_tunel\ambilbox_tunel.csproj", "{CC865ED0-BCF7-43AB-9409-E37454DC3BFB}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ambibox_tunel_setup", "ambibox_tunel_setup\ambibox_tunel_setup.vdproj", "{164CB3B3-DA5D-4340-B2EF-A913A92FA84E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{CC865ED0-BCF7-43AB-9409-E37454DC3BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC865ED0-BCF7-43AB-9409-E37454DC3BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC865ED0-BCF7-43AB-9409-E37454DC3BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164CB3B3-DA5D-4340-B2EF-A913A92FA84E}.Debug|Any CPU.ActiveCfg = Debug
+		{164CB3B3-DA5D-4340-B2EF-A913A92FA84E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

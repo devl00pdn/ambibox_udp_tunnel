@@ -54,6 +54,7 @@ namespace ambibox_tunel_dev
             {
                 return;
             }
+
             // create serial port
             serial = new SerialPort("COM5",
                                     115200,
@@ -62,6 +63,11 @@ namespace ambibox_tunel_dev
                                     StopBits.One);
             serial.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
             serial.Open();
+
+            if (!serial.IsOpen)
+            {
+                return;
+            }
             // start wdt timer for adalight
             setup_timer();
             is_started = true;
@@ -115,6 +121,10 @@ namespace ambibox_tunel_dev
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
+            if (!is_started)
+            {
+                return;
+            }
             if (!is_data_incomming)
             {
                 // if incoming data is stuck. Send signal to adalight 
