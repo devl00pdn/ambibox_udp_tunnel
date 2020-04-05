@@ -1,10 +1,10 @@
 # Ambibox udp tunnel
-### platform: Windows 10 | type: service  
+### Platform: Windows 10 | type: service  
 
 This repo contains the solution for translating serial data form Ambibox (only Adalight device config) to custom packet, that then sends broadcast via udp.  
 
-#### hardcoded configs: serial port "COM5" | udp broadcast port 40000
-#### custom packet structure:
+#### Hardcoded configs: serial port "COM5" | udp broadcast port 40000
+#### Custom packet structure:
 ```c++
   struct leds_data{
     uint16_t magic; /// always 0xADAF
@@ -14,7 +14,7 @@ This repo contains the solution for translating serial data form Ambibox (only A
   }
 ```
 
-
-
 This code writed after two day C# experiance, so I hope the user will be tolerant about code quality. Thx to guides and stackoverflow :)  
 
+## Solution description: in progress ...
+ 
